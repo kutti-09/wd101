@@ -1,0 +1,133 @@
+<html>
+    <head lang="en">
+        <title>Registration Form</title>
+        
+        <style>
+            form {
+                background-color: rgb(91, 157, 167);
+                width: fit-content;
+                margin: 20px;
+                padding: 50px;
+                border: 4px solid #103b36;
+                text-align: left;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 25px;
+                font-weight: lighter;
+            }
+
+            
+            input[type=text], input[type=password], input[type=email],input[type=date]{
+                width: 100%;
+                padding: 10px;
+                font-weight: lighter;
+                font-size: 25px;
+                margin-bottom: 30px;
+                border: 3px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                text-align: left;
+                justify-content: center;
+                margin-left: 2px;
+            }
+            input[type=checkbox]{
+                width: 20px;
+                font-size: 25px;
+                padding: 20px;
+
+            }
+            button {
+                background-color: #267629;
+                color: white;
+                padding: 20px 40px;
+                font-weight: bold;
+                font-size: 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            
+            button:hover {
+                background-color: #45a049;
+            }
+            .ftable{
+                font-size: 20px;  
+                padding-left: 3.0rem;
+                padding-right: 3.0rem;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(215, 196, 196);
+                padding: 10px 6px 8px 6px;
+                margin-top: 5px;
+                border-color: rgba(58, 53, 53, 0.2);
+                border-radius: 0.5rem;
+                box-shadow: rgba(0, 0, 0, 0.25);
+                border-width: 1px;
+            }
+            .stable{
+                margin:auto
+            }
+            .ttable{
+                font-size: 20px;  
+                font-weight: 655;
+                font-size: 1.900rem;
+                text-align: center;
+                line-height: 1.5;
+                line-height: 3.45rem;
+            }
+            td{
+                font-size: 20px;
+                padding-right: 3rem;
+                padding-left: 3rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-width: 1px;
+                border-style: solid;
+                border-color: cornflowerblue;
+            }
+            th{
+                font-size: 22px;
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+           </style> 
+    </head>
+    <body>
+        <div>
+        <form id="first-form" > 
+            <label for="name">Name</label>
+            <input required type="text" id="name" name="name">
+            <br>
+        
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email">
+            <br>
+        
+            <label for="password">Password</label>
+            <input required type="password" name="password" id="password">
+            <br>
+        
+            <label>Date of Birth</label>
+            <input required type="date" id="dob" name="dob">
+            <br>
+        
+            <label for="checkbox">Accept Terms & Conditions</label>
+            <input required type="checkbox" id="checkbox" name="checkbox">
+            <br><br></br>
+        
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <div id="ftable">
+            <div id="stable">
+                <h2 id="ttable">Entries of users</h2>
+                <div id="entriesofuser"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
